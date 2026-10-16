@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LORA — Fine Jewelry</title>
+  <meta name="description" content="LORA fine jewelry. Elegance, beyond time. Pieces inspired by nature and crafted to become timeless.">
+  <meta name="theme-color" content="#91827F">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect fill='%2391827F' width='64' height='64'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia' font-size='28' fill='%23F4EFE8'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="header" id="header">
+    <a class="logo" href="#top">LORA</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#collections">Collections</a>
+      <a href="#story">Our Story</a>
+      <a href="#craft">Craftsmanship</a>
+    </nav>
+    <div class="header-tools">
+      <button class="icon-btn" id="bag-open" type="button" aria-label="Open bag">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6.2 8.2h11.6l-.7 11.2a1 1 0 0 1-1 .9H7.9a1 1 0 0 1-1-.9L6.2 8.2Z"/>
+          <path d="M9 8.1V6.8a3 3 0 0 1 6 0v1.3"/>
+        </svg>
+        <span class="bag-count" id="bag-count" hidden>0</span>
+      </button>
+      <button class="icon-btn" id="menu-open" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 8h16M4 16h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero" id="top">
+      <img class="hero-swan" src="assets/swan.jpg" alt="">
+      <div class="hero-main">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="rule"></span>Fine Jewelry<span class="rule"></span></p>
+          <div class="hero-swap" id="hero-swap">
+            <h1 id="hero-title"><span class="line">Elegance,</span><span class="line">Beyond Time.</span></h1>
+            <p class="lede" id="hero-lede">Jewelry inspired by nature.<br>Crafted to become timeless.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn" href="#collections">Explore the Collection <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#story">Discover our Story</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pager" id="pager" role="tablist" aria-label="Featured chapters">
+        <div class="pager-nums">
+          <button type="button" role="tab" id="tab-0" aria-selected="true" aria-controls="hero-swap" data-slide="0">01</button>
+          <button type="button" role="tab" id="tab-1" aria-selected="false" aria-controls="hero-swap" data-slide="1" tabindex="-1">02</button>
+          <button type="button" role="tab" id="tab-2" aria-selected="false" aria-controls="hero-swap" data-slide="2" tabindex="-1">03</button>
+          <button type="button" role="tab" id="tab-3" aria-selected="false" aria-controls="hero-swap" data-slide="3" tabindex="-1">04</button>
+        </div>
+        <div class="pager-rail" aria-hidden="true"><span id="pager-thumb"></span></div>
+      </div>
+
+      <div class="hero-foot">
+        <button class="scroll-down" id="scroll-down" type="button">
+          <span class="scroll-mouse" aria-hidden="true"><span></span></span>
+          Scroll down
+        </button>
+        <p class="tagline"><span class="rule"></span>Grace, crafted to last.</p>
+      </div>
+    </section>
+
+    <section class="collection" id="collections">
+      <div class="collection-layout">
+        <figure class="collection-visual">
+          <img src="assets/swan.jpg" alt="Pink sapphire and diamond collar resting on white swan feathers">
+          <figcaption>The Aurelia collar</figcaption>
+        </figure>
+        <div class="collection-copy">
+          <p class="eyebrow eyebrow-ink"><span class="rule"></span>Collections<span class="rule"></span></p>
+          <h2>Pieces shaped by light.</h2>
+          <p class="section-lede">Four forms drawn from the same study: a curve of wing, a glint of water, a stone cut to hold both.</p>
+          <ul class="pieces">
+            <li class="piece">
+              <p class="piece-index">01</p>
+              <h3>Aurelia</h3>
+              <p>Collar of pink sapphire, white diamond, and warm yellow diamond, set in gold.</p>
+              <button class="add" type="button" data-id="aurelia" data-name="Aurelia Collar" data-detail="Pink sapphire, diamond, and gold">Place in bag</button>
+            </li>
+            <li class="piece">
+              <p class="piece-index">02</p>
+              <h3>Brume</h3>
+              <p>Pear-shaped drops that move when the light does. Made to be worn close to the face.</p>
+              <button class="add" type="button" data-id="brume" data-name="Brume Earrings" data-detail="Pear-cut diamond drops">Place in bag</button>
+            </li>
+            <li class="piece">
+              <p class="piece-index">03</p>
+              <h3>Calan</h3>
+              <p>A low ring of pavé. Quiet on the hand, bright only when it turns.</p>
+              <button class="add" type="button" data-id="calan" data-name="Calan Ring" data-detail="Pavé diamond band">Place in bag</button>
+            </li>
+            <li class="piece">
+              <p class="piece-index">04</p>
+              <h3>Dusk Line</h3>
+              <p>A single arc of mixed stones. The bracelet that follows the wrist, not the other way.</p>
+              <button class="add" type="button" data-id="dusk" data-name="Dusk Line Bracelet" data-detail="Mixed-stone arc bracelet">Place in bag</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-layout">
+        <div>
+          <p class="eyebrow eyebrow-ink"><span class="rule"></span>Our Story<span class="rule"></span></p>
+          <h2>Born from the curve of a wing.</h2>
+        </div>
+        <div class="story-body">
+          <p>LORA started as a drawing of a neckline — the long, unbroken line of a swan — and a question of how jewelry could follow it without interrupting it.</p>
+          <p>Each piece is composed the same way: a natural form first, then metal, then stone. Nothing is added to impress. What remains is meant to be kept, and worn, for a long time.</p>
+          <blockquote>Grace, crafted to last.</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="craft" id="craft">
+      <p class="eyebrow"><span class="rule"></span>Craftsmanship<span class="rule"></span></p>
+      <h2>Three quiet stages.</h2>
+      <ol class="stages">
+        <li>
+          <p class="piece-index">01</p>
+          <h3>Drawn</h3>
+          <p>The line is studied from life. Proportion is settled before a single stone is chosen.</p>
+        </li>
+        <li>
+          <p class="piece-index">02</p>
+          <h3>Set</h3>
+          <p>Gold is shaped by hand. Stones are placed so each facet answers the one beside it.</p>
+        </li>
+        <li>
+          <p class="piece-index">03</p>
+          <h3>Finished</h3>
+          <p>The surface is refined until it feels inevitable — soft on the skin, exact in the light.</p>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#top">LORA</a>
+    <p>Fine jewelry inspired by nature.</p>
+    <nav aria-label="Footer">
+      <a href="#collections">Collections</a>
+      <a href="#story">Our Story</a>
+      <a href="#craft">Craftsmanship</a>
+    </nav>
+    <p class="legal">© <span id="year">2026</span> LORA. All rights reserved.</p>
+  </footer>
+
+  <div class="overlay" id="menu" hidden>
+    <div class="menu-panel" role="dialog" aria-modal="true" aria-labelledby="menu-title">
+      <div class="menu-top">
+        <p class="logo" id="menu-title">LORA</p>
+        <button class="icon-btn" id="menu-close" type="button" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="menu-nav" aria-label="Menu">
+        <a href="#collections">Collections</a>
+        <a href="#story">Our Story</a>
+        <a href="#craft">Craftsmanship</a>
+        <a href="#top">The House</a>
+      </nav>
+      <p class="menu-note">Atelier visits by appointment.<br>Pieces are made in small numbers.</p>
+    </div>
+  </div>
+
+  <div class="overlay overlay-bag" id="bag" hidden>
+    <button class="scrim" id="bag-scrim" type="button" aria-label="Close bag"></button>
+    <aside class="bag-panel" role="dialog" aria-modal="true" aria-labelledby="bag-title">
+      <div class="menu-top">
+        <h2 id="bag-title">Your bag</h2>
+        <button class="icon-btn" id="bag-close" type="button" aria-label="Close bag">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18"/>
+          </svg>
+        </button>
+      </div>
+      <div id="bag-body" class="bag-body"></div>
+    </aside>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
